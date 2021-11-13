@@ -8,7 +8,7 @@ export default class Action extends React.Component {
         const action = _.get(this.props, 'action');
         const url = _.get(action, 'url');
         const label = _.get(action, 'label');
-    s    const style = _.get(action, 'style', 'link');
+        const style = _.get(action, 'style', 'link');
         const classes = classNames({
             'btn': style !== 'link',
             'btn--secondary': style === 'secondary'
